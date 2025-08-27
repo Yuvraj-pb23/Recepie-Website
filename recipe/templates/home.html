@@ -1,0 +1,498 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>Tasty</title>{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock head %}
+
+
+{% block content %}
+
+<!--Main Page-->
+<div class="main-content">
+    <div class="sub-content d-flex">
+        <div class="cont-block d-flex">
+            <div class="head1">
+                <a href="#">RECIPE OF THE DAY</a>
+            </div>
+            <div class="head2">
+                <h2>Tasty Fluffy <br> Pancakes</h2>
+            </div>
+            <div class="sub-info d-flex">
+                <div class="author">
+                    <img src="{% static 'images/rachel.png' %}" alt="rachel">
+                    <h6>By Rachel Bradley</h6>
+                </div>
+                <div class="duration">
+                    <img src="{% static 'images/clock.svg' %}" alt="clock">
+                    <h6>1 hour and 30 mins</h6>
+                </div>
+            </div>
+            <div class="description">
+                <p>The Best Fluffy Pancakes recipe you will fall in love with. Full of tips and tricks to help
+                    you make the best pancakes… ever!</p>
+            </div>
+            <div class="btn d-flex">
+                <div class="cook d-flex">
+                    <a href="">
+                        <i class="fa-solid fa-book-open-reader book"></i>
+                        <span>Cook Now</span>
+                    </a>
+                </div>
+                <div class="explore d-flex">
+                    <a href="">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <span>Explore Recipes</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="img-block">
+            <img src="{% static '/images/pancakes.jpeg' %}" alt="pancakes">
+        </div>
+    </div>
+</div>
+
+<!--Recipes Page-->
+<div class="bg-color">
+    <div class="blank"></div>
+    <div class="recipe-content">
+        <div class="recipe-header">
+            <h2>Recipes of the Week</h2>
+            <p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet
+                accumsan
+                est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p>
+        </div>
+        <div class="recipe-posts">
+            <div class="card">
+                <div class="image">
+                    <img src="{% static '/images/img1.jpg' %}" alt="one">
+                </div>
+                <div class="content">
+                    <div class="category">
+                        <a href="#">Aperitives</a>
+                    </div>
+                    <div class="title">
+                        <h2><a href="#">Topping Marzipan Tart Cheesecake Sweet Lollipop</a></h2>
+                    </div>
+                    <div class="person-info">
+                        <div class="author">
+                            <a href="#">
+                                <img src="{% static '/images/author.png' %}" alt="author">
+                                <span>Amie</span>
+                                <span class="dot">.</span>
+                            </a>
+                        </div>
+                        <div class="date">
+                            <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                        </div>
+                    </div>
+                    <div class="reaction">
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="{% static '/images/img2.jpg' %}" alt="two">
+                </div>
+                <div class="content">
+                    <div class="category">
+                        <a href="#">Pizzas</a>
+                    </div>
+                    <div class="title">
+                        <h2><a href="#">Topping Carrot Cake Jujubes Lemon Drops</a></h2>
+                    </div>
+                    <div class="person-info">
+                        <div class="author">
+                            <a href="#">
+                                <img src="{% static '/images/author.png' %}" alt="author">
+                                <span>Amie</span>
+                                <span class="dot">.</span>
+                            </a>
+                        </div>
+                        <div class="date">
+                            <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                        </div>
+                    </div>
+                    <div class="reaction">
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="{% static '/images/img3.jpg' %}" alt="three">
+                </div>
+                <div class="content">
+                    <div class="category">
+                        <a href="#">Aperitives</a>
+                    </div>
+                    <div class="title">
+                        <h2><a href="#">Muffin Donut Soufflé Piebear Claw Croissant</a></h2>
+                    </div>
+                    <div class="person-info">
+                        <div class="author">
+                            <a href="#">
+                                <img src="{% static '/images/author.png' %}" alt="author">
+                                <span>Amie</span>
+                                <span class="dot">.</span>
+                            </a>
+                        </div>
+                        <div class="date">
+                            <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                        </div>
+                    </div>
+                    <div class="reaction">
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="{% static '/images/img4.jpg' %}" alt="four">
+                </div>
+                <div class="content">
+                    <div class="category">
+                        <a href="#">Salads</a>
+                    </div>
+                    <div class="title">
+                        <h2><a href="#">Bearclaw Dragée Sweet Rolloat Mosering</a></h2>
+                    </div>
+                    <div class="person-info">
+                        <div class="author">
+                            <a href="#">
+                                <img src="{% static '/images/author.png' %}" alt="author">
+                                <span>Amie</span>
+                                <span class="dot">.</span>
+                            </a>
+                        </div>
+                        <div class="date">
+                            <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                        </div>
+                    </div>
+                    <div class="reaction">
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="{% static '/images/img5.jpg' %}" alt="five">
+                </div>
+                <div class="content">
+                    <div class="category">
+                        <a href="#">Aperitives</a>
+                    </div>
+                    <div class="title">
+                        <h2><a href="#">Gingerbread Donut Bear Claw Powder</a></h2>
+                    </div>
+                    <div class="person-info">
+                        <div class="author">
+                            <a href="#">
+                                <img src="{% static '/images/author.png' %}" alt="author">
+                                <span>Amie</span>
+                                <span class="dot">.</span>
+                            </a>
+                        </div>
+                        <div class="date">
+                            <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                        </div>
+                    </div>
+                    <div class="reaction">
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="{% static '/images/img6.jpg' %}" alt="six">
+                </div>
+                <div class="content">
+                    <div class="category">
+                        <a href="#">Deserts</a>
+                    </div>
+                    <div class="title">
+                        <h2><a href="#">Sweet roll chupa chups halvah muffin</a></h2>
+                    </div>
+                    <div class="person-info">
+                        <div class="author">
+                            <a href="#">
+                                <img src="{% static '/images/author.png' %}" alt="author">
+                                <span>Amie</span>
+                                <span class="dot">.</span>
+                            </a>
+                        </div>
+                        <div class="date">
+                            <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                        </div>
+                    </div>
+                    <div class="reaction">
+                        <div class="like">
+                            <i class="far fa-heart"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="comment">
+                            <i class="fa-regular fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="all-recipes-btn">
+        <a href="#"><span>View all Recipes</span></a>
+    </div>
+    <div class="blank"></div>
+
+    <!--Recipe Categories-->
+    <div class="recipe-category">
+        <div class="recipe-header">
+            <h2>Recipes By Category</h2>
+            <p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet
+                accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p>
+        </div>
+        <div class="food-pics">
+            <div class="pic">
+                <img src="{% static '/images/pic1.jpg' %}" alt="one">
+                <h5 class="one">Sweets</h5>
+            </div>
+            <div class="pic">
+                <img src="{% static '/images/pic2.jpg' %}" alt="two">
+                <h5 class="two">Burgers</h5>
+            </div>
+            <div class="pic">
+                <img src="{% static '/images/pic3.jpg' %}" alt="three">
+                <h5 class="three">Drinks</h5>
+            </div>
+            <div class="pic">
+                <img src="{% static '/images/pic4.jpg' %}" alt="four">
+                <h5 class="four">Pizzas</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Mobile App-->
+<div class="mobile">
+    <div class="image">
+        <img src="{% static '/images/mobile.jpg' %}" alt="mobile">
+    </div>
+    <div class="download-app">
+        <p class="best">BEST MOBILE APP</p>
+        <h2>Download Our App</h2>
+        <p class="description">Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor.
+            Curabitur elementum nunc a
+            leo imperdiet, nec elementum diam elementum. Etiam elementum euismod commodo.</p>
+        <div class="download-btn">
+            <div class="app">
+                <img src="{% static '/images/app-store.png' %}" alt="app">
+            </div>
+            <div class="google">
+                <img src="{% static '/images/google-play.png' %}" alt="google">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Chef Page-->
+<div class="qualified-chef">
+    <div class="blank"></div>
+    <div class="recipe-header">
+        <h2>Our Qualified Chefs</h2>
+        <p>Fusce dignissim blandit justo, eget elementum risus tristique. Nunc lacus lacus, sit amet accumsan
+            est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus.</p>
+    </div>
+    <div class="chef-pics">
+        <div class="chef-card">
+            <div class="image">
+                <img src="{% static '/images/chef1.jpg' %}" alt="chef">
+            </div>
+            <h6>Nick Paterson</h6>
+            <p>Chef</p>
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="chef-card">
+            <div class="image">
+                <img src="{% static '/images/chef2.jpg' %}" alt="chef">
+            </div>
+            <h6>Jacob Guerrero</h6>
+            <p>Chef</p>
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="chef-card">
+            <div class="image">
+                <img src="{% static '/images/chef3.jpg' %}" alt="chef">
+            </div>
+            <h6>Melissa Prey</h6>
+            <p>Chef</p>
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+</div>
+
+<!--Global Community-->
+<div class="global-community">
+    <div class="content">
+        <p>MEET CHEFS AROUND THE WORLD</p>
+        <h2>Join a Global Community of Change Makers and People Like You</h2>
+        <div class="count-row">
+            <div class="col">
+                <div class="count">2,000</div>
+                <div class="text">UNIQUE RECIPES</div>
+            </div>
+            <div class="col">
+                <div class="count">3,000</div>
+                <div class="text">AWESOME MEMBERS</div>
+            </div>
+            <div class="col">
+                <div class="count">100%</div>
+                <div class="text">SATISFACTION RATE</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Newsletter Page-->
+<div class="newsletter">
+    <div class="content">
+        <div class="form">
+            <h2>Newsletter Updates</h2>
+            <p>Enter your email address below to subscribe to our tasty newsletter</p>
+            <form action="/action_page.php">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Trending block carousel-->
+<div class="block">
+    <div class="trending-block">
+        <div class="top">
+            <h3>Trending now</h3>
+            <div class="icon">
+                <a href=""><i class="fa-solid fa-caret-left"></i></a>
+                <a href=""><i class="fa-solid fa-caret-right"></i></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="page">
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post1.jpg' %}" alt="one">
+                        <span>Slow Cooker Beef Bourguignon</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post2.jpg' %}" alt="two">
+                        <span>Topping Marzipan Tart Cheesecake Sweet Lollipop</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post3.jpg' %}" alt="three">
+                        <span>Fennel Slaw with Mint Vinaigrette</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post4.jpeg' %}" alt="four">
+                        <span>Blueberry Buttermilk Pancakes</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post5.jpg' %}" alt="five">
+                        <span>Tootsie Donut Fruitcake Gummies</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post6.jpg' %}" alt="six">
+                        <span>Sweet roll chupa chups halvah muffin</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post7.jpg' %}" alt="seven">
+                        <span>Gingerbread Donut Bear Claw Powder</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post8.jpg' %}" alt="eigth">
+                        <span>Bearclaw Dragée Sweet Rolloat Mosering</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post9.jpg' %}" alt="nine">
+                        <span>Muffin Donut Soufflé Piebear Claw Croissant</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="post">
+                        <img src="{% static '/images/post10.jpg' %}" alt="ten">
+                        <span>Topping Carrot Cake Jujubes Lemon Drops</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,361 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>Recipe - Tasty</title>{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/recipe.css' %}">
+{% endblock head %}
+
+
+{% block content %}
+<!--Recipe Page-->
+<div class="recipe-content">
+    <div class="header">
+        <div class="recipe-header">
+            <h1>Recipes</h1>
+            <p>Macaroon I love ice cream bear claw icing jelly beans jelly-o gingerbread cookie. Tootsie
+                roll
+                gummi bears liquorice brownie candy canes candy canes I love soufflé bear claw.</p>
+            <div class="short-nav">
+                <span class="first">
+                    <a href="{% url 'home' %}">Home</a>
+                    <img width="12" height="12" src="https://img.icons8.com/ios-glyphs/12/4D4D4D/forward.png"
+                        alt="forward" />
+                </span>
+                <span class="second">Recipes</span>
+            </div>
+        </div>
+    </div>
+    <div class="bg-color">
+        <div class="recipe-posts">
+            <div class="first-page">
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img1.jpg' %}" alt="one">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Aperitives</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Topping Marzipan Tart Cheesecake Sweet Lollipop</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img2.jpg' %}" alt="two">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Pizzas</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Topping Carrot Cake Jujubes Lemon Drops</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img3.jpg' %}" alt="three">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Aperitives</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Muffin Donut Soufflé Piebear Claw Croissant</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img4.jpg' %}" alt="four">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Salads</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Bearclaw Dragée Sweet Rolloat Mosering</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img5.jpg' %}" alt="five">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Aperitives</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Gingerbread Donut Bear Claw Powder</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img6.jpg' %}" alt="six">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Deserts</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Sweet roll chupa chups halvah muffin</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img7.jpg' %}" alt="two">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Soups</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Tootsie Donut Fruitcake Gummies</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img8.jpeg' %}" alt="two">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Deserts</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Blueberry Buttermilk Pancakes</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="{% static '/images/img9.jpg' %}" alt="two">
+                    </div>
+                    <div class="content">
+                        <div class="category">
+                            <a href="#">Salads</a>
+                        </div>
+                        <div class="title">
+                            <h2><a href="#">Fennel Slaw with Mint Vinaigrette</a></h2>
+                        </div>
+                        <div class="person-info">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="{% static '/images/author.png' %}" alt="author">
+                                    <span>Amie</span>
+                                    <span class="dot">.</span>
+                                </a>
+                            </div>
+                            <div class="date">
+                                <time datetime="2021-04-16T17:08:21+00:00">April 16, 2021</time>
+                            </div>
+                        </div>
+                        <div class="reaction">
+                            <div class="like">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </div>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-pagination">
+            <div class="page">
+                <span>1</span>
+                <a href="{% url 'recipe2' %}">2</a>
+            </div>
+            <div class="next btn">
+                <a href="{% url 'recipe2' %}">Next <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
