@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>About - Tasty</title>{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock head %}
+
+{% block content %}
+<div class="about-content">
+    <div class="header">
+        <div class="about-header">
+            <h1>About</h1>
+            <p>Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc a leo
+                imperdiet, nec elementum diam elementum. </p>
+            <div class="short-nav">
+                <span class="first">
+                    <a href="{% url 'home' %}">Home</a>
+                    <img width="12" height="12" src="https://img.icons8.com/ios-glyphs/12/4D4D4D/forward.png"
+                        alt="forward" />
+                </span>
+                <span class="second">About</span>
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="main-chef">
+        <div class="content">
+            <p class="story">OUR STORY</p>
+            <h2>Mauris Imperdiet Orci Dapibus Commodo Morbi in Faucibus.</h2>
+            <p class="description">
+                Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc a leo
+                imperdiet, nec elementum diam elementum. Etiam elementum euismod commodo.
+                <br><br>
+                Proin eleifend eget quam ut efficitur. Mauris a accumsan mauris. Phasellus egestas et risus sit amet
+                hendrerit. Nulla facilisi. Cras urna sem, vulputate sed condimentum a, posuere vel enim.
+            </p>
+            <img src="{% static 'images/Signature.svg' %}" alt="signature">
+        </div>
+        <div class="image">
+            <img src="{% static 'images/main-chef.png' %}" alt="chef">
+        </div>
+    </div>
+    <div class="blank"></div>
+</div>
+{% endblock content %}

@@ -90,9 +90,9 @@
                 </div>
                 <nav>
                     <ul>
-                        <li class="dp-inline"><a href="{% url 'home' %}" class="clr">Home</a></li>
-                        <li class="dp-inline"><a href="{% url 'recipe' %}" class="hvr">Recipes</a></li>
-                        <li class="dp-inline"><a href="#" class="hvr">About</a></li>
+                        <li class="dp-inline {% if active_page == 'home' %}active{% endif %}"><a href="{% url 'home' %}" class="hvr">Home</a></li>
+                        <li class="dp-inline {% if active_page == 'recipe' %}active{% endif %}"><a href="{% url 'recipe' %}" class="hvr">Recipes</a></li>
+                        <li class="dp-inline {% if active_page == 'about' %}active{% endif %}"><a href="{% url 'about' %}" class="hvr">About</a></li>
                         <li class="dp-inline"><a href="#" class="hvr">Contact</a></li>
                     </ul>
                 </nav>

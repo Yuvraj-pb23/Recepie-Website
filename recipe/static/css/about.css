@@ -1,0 +1,87 @@
+.blank {
+    max-width: 1143px;
+    margin: auto;
+    height: 65px;
+}
+.header {
+    background-color: #fff9f6;
+}
+
+.about-header {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-header h1 {
+    font-size: 50px;
+}
+
+.about-header p {
+    margin-top: 20px;
+    color: #da9880;
+    line-height: 1.65;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about-header .short-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.short-nav .first {
+    display: flex;
+    align-items: center;
+}
+
+.short-nav a {
+    text-decoration: none;
+    color: #ff6310;
+}
+
+.short-nav img {
+    margin: 0 8px;
+}
+
+.short-nav .second {
+    color: #687279;
+    font-weight: 500;
+}
+.main-chef{
+    max-width: 1143px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-chef .content {
+    width: 554px;
+}
+.main-chef .image img {
+    width: 554px;
+}
+.content .story {
+    color: #ff6310;
+    margin-bottom: 16px;
+}
+.content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+.content .description {
+    color:#687279;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
