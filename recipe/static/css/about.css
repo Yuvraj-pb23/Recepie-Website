@@ -65,8 +65,11 @@
 .main-chef .content {
     width: 554px;
 }
-.main-chef .image img {
+.main-chef .image img, .main-chef .image {
     width: 554px;
+    height: 530px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 .content .story {
     color: #ff6310;
@@ -84,4 +87,26 @@
     letter-spacing: 0.2px;
     font-size: 15px;
     margin-bottom: 50px;
+}
+.main-chef i {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    bottom: 295px;
+    left: 245px;
+}
+.btn a {
+    background-color: #ff6310;
+    color: white;
+    text-decoration: none;
+     font-size: 16px;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    height: 27px;
+    text-decoration: none;
+}
+.cooking-img {
+    filter: brightness(0.8);
 }
