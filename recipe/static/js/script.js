@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {    // Wait for the e
 
   searchIcon.onclick = function () {    // When search icon is clicked
     searchOverlay.style.display = "block";    // Show the overlay (make it visible)
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";        
   };
 
   closeSearch.onclick = function () {    // When close button is clicked
@@ -23,68 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {    // Wait for the e
     }
   };
 
-
-
-  //LOGIN MODAL 
-  const userIcon = document.getElementById("userIcon");
-  const loginOverlay = document.getElementById("loginOverlay");
-  const closeLogin = document.getElementById("closeLogin");
-
-  userIcon.onclick = () => {
-    loginOverlay.style.display = "block";
-    document.body.style.overflow = "hidden";
-  }
-  closeLogin.onclick = () => {
-    loginOverlay.style.display = "none";
-    document.body.style.overflow = "";
-  }
-  loginOverlay.onclick = (e) => {
-    if (!e.target.closest(".modal")) {
-      loginOverlay.style.display = "none";
-      document.body.style.overflow = "";
-    }
-  };
-
-  //SIGNUP MODAL
-  const signbtn = document.getElementById("signbtn");
-  const signOverlay = document.getElementById("signOverlay");
-  const closeSign = document.getElementById("closeSign");
-
-  signbtn.onclick = () => {
-    signOverlay.style.display = "block";
-    document.body.style.overflow = "hidden";
-  }
-  closeSign.onclick = () => {
-    signOverlay.style.display = "none";
-    document.body.style.overflow = "";
-  }
-  signOverlay.onclick = (e) => {
-    if (!e.target.closest(".modal")) {
-      signOverlay.style.display = "none";
-      document.body.style.overflow = "";
-    }
-  };
-
-
-
-  // SHOW SIGNUP AND LOGIN 
-  var showSignUp = document.getElementById('showSignUp');
-  var showLogin = document.getElementById('showLogin');
-  if (showSignUp) {
-    showSignUp.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.getElementById('loginOverlay').style.display = 'none';
-      document.getElementById('signOverlay').style.display = 'block';
-    });
-  }
-  if (showLogin) {
-    showLogin.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.getElementById('signOverlay').style.display = 'none';
-      document.getElementById('loginOverlay').style.display = 'block';
-    });
-  }
-
+  
 
   //STICKY-NAV
   const stickyNav = document.querySelector('.sticky-nav');    // Get the sticky nav element from the page (the bar that sticks to the top)

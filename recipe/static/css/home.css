@@ -183,6 +183,8 @@
     width: 363px;
     margin-bottom: 20px;
     border-radius: 8px;
+    object-fit: cover;
+    height: 272px;
 }
 .card .image img:hover {
     cursor: pointer;

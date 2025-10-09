@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/dashboard/dash.css' %}">
+    <script src="https://kit.fontawesome.com/6321f8b59c.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo.svg' %}" alt=""></a>
+                </div>
+                <div class="search-box">
+                    <input class="search-input" type="search" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <div class="utility-bar">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-gear"></i></a>
+                        <div class="dropdwn">
+                            <a href="#"><i class="fa-solid fa-user-gear"></i> Profile Settings</a>
+                            <a href="#"><i class="fa-solid fa-cog"></i> Account Settings</a>
+                            <a href="#" class="delete-link"><i class="fa-solid fa-trash"></i> Delete Account</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+                        <div class="dropdwn">
+                            <a href="#"><i class="fa-solid fa-heart"></i> My Favourites</a>
+                            <a href="#"><i class="fa-solid fa-file-lines"></i> Drafts</a>
+                            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </header>
+        <div class="main-box">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li class="create-btn"><a href=""><i class="fa-solid fa-plus"></i> <span>Create Recipe</span></a></li>
+                        <li><a href=""><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                        <li><a href=""><i class="fa-solid fa-file-lines"></i> My Recipe</a></li>
+                        <li><a href=""><i class="fa-solid fa-star"></i> Favourites</a></li>
+                        <li><a href=""><i class="fa-solid fa-file"></i> Drafts</a></li>
+                        <li class="logout-link"><a href=""><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <script src="https://kit.fontawesome.com/6321f8b59c.js" crossorigin="anonymous"></script>
+    <title>Login - Tasty</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="{% static 'images/logo.svg' %}" alt="logo">
+    </div>
+    <div class="home-link">
+        <a href="{% url 'home' %}"><i class="fa-solid fa-house"></i> Home</a>
+    </div>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Login</h1>
+                <p class="recipe-count">More than <span>15,000 recipes</span> from around the world!</p>
+
+                <form method="POST" action="{% url 'loginUser' %}" class="login-form">
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Enter Email Address">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password">
+                        <i class="fa-regular fa-eye-slash toggle-password"></i>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">LOGIN</button>
+
+                    {% if error %}
+                    <p style="color:red;">{{ error }}</p>
+                    {% endif %}
+                </form>
+
+                <p class="signup-prompt">Dont have an account? <a href="{% url 'sign' %}" class="signup-link">Sign
+                        Up</a></p>
+
+                <div class="social-login">
+                    <p>Login with</p>
+                    <div class="social-buttons">
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="google"><i class="fab fa-google"></i></a>
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

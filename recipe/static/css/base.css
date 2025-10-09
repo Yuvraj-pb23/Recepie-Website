@@ -236,13 +236,13 @@ header i {
 
 /* Login Modal */
 .login {
-    margin: 94px auto;
+    margin: 100px auto;
 }
 
 
 /* Sign Up Modal */
 .sign {
-    margin: 32px auto;
+    margin: 40px auto;
 }
 
 /*Sticky Navbar*/
